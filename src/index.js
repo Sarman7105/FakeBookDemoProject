@@ -5,12 +5,15 @@ import App from './App';
 import {
   BrowserRouter as Router
 } from "react-router-dom";
+import {AuthContextProvider} from './store/auth';
 
 
 ReactDOM.render(
-  <Router>
+  <AuthContextProvider>
+    <Router>
     <App />
-  </Router>,
+    </Router>
+  </AuthContextProvider>,
   document.getElementById('root')
 );
 

@@ -10,6 +10,9 @@ function App() {
     <>
       <Header/>
       <Switch>
+        <ProtectedRoute exact path="/">
+          <Home></Home>
+        </ProtectedRoute>
         <Route path="/login">
           <Login></Login>
         </Route>

@@ -1,13 +1,14 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { Route,Redirect } from 'react-router';
+import AuthContext from '../../store/auth';
 
 const ProtectedRoute = ({children,rest}) => {
-    const[isAuthenticated,setIsAuthenticated]=useState(true)
+    const {isAuth}=useContext(AuthContext)
     return (
         <Route
       {...rest}
       render={({ location }) =>
-      isAuthenticated ? (
+      isAuth? (
           children
         ) : (
           <Redirect
