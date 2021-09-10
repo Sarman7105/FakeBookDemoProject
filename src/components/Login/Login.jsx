@@ -50,6 +50,7 @@ const Login = (props) => {
   const submitHandler = (event) => {
     event.preventDefault();
     authContext.setIsAuth(true);
+    localStorage.setItem('isLoggedIn',1)
     history.replace(from);
 
   };
