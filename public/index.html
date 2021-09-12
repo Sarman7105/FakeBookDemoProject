@@ -39,5 +39,15 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script>
+      function updatemenu() {
+      if (document.getElementById('responsive-menu').checked == true) {
+        document.getElementById('menu').style.borderBottomRightRadius = '0';
+        document.getElementById('menu').style.borderBottomLeftRadius = '0';
+      }else{
+        document.getElementById('menu').style.borderRadius = '10px';
+      }
+    }
+  </script>
   </body>
 </html>

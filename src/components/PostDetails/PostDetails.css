@@ -6,4 +6,6 @@
 }
 .img img{
     border-radius: 7px;
+    max-width: 100%;
+    object-fit: contain;
 }
