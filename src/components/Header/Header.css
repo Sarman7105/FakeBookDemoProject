@@ -3,10 +3,7 @@
 	color: #FFF;
 	height: 45px;
 	padding-left: 18px;
-	/* position: fixed; */
-	/* top: 0;
-	z-index: 1; */
-	/* border-radius: 10px; */
+	border-radius: 10px;
 }
 #menu ul, #menu li {
 	margin: 0 auto;
@@ -21,6 +18,10 @@
 	display: inline;
 	position: relative;
 }
+#linkRight{
+	float: right !important;
+	margin-right: 20px !important;
+}
 #menu a {
 	display: block;
 	line-height: 45px;
@@ -29,12 +30,18 @@
 	color: #FFFFFF;
 	font-size: 16px;
 }
-
+#menu li a:active{
+	color: #d4d3d3;
+}
+#menu a.dropdown-arrow:after {
+	content: "\25BE";
+	margin-left: 5px;
+}
 #menu li a:hover {
 	color: #0099CC;
-	background: #F2F2F2;
+	background: #f0efef;
 }
-#menu input[type='checkbox'] {
+#menu input {
 	display: none;
 	margin: 0;
 	padding: 0;
@@ -81,10 +88,11 @@
 }
 @media screen and (max-width: 768px){
 	#menu {position:relative}
-	#menu ul {background:#111;position:absolute;top:100%;right:0;left:0;z-index:3;height:auto;display:none}
+	#menu ul {background:#111;position:absolute;top:100%;right:0;left:0;z-index:13;height:auto;display:none}
 	#menu ul.sub-menus {width:100%;position:static;}
 	#menu ul.sub-menus a {padding-left:30px;}
 	#menu li {display:block;float:none;width:auto;}
+	#linkRight {display:block;float: none !important;;width:auto;}
 	#menu input, #menu label {position:absolute;top:0;left:0;display:block}
 	#menu input {z-index:4}
 	#menu input:checked + label {color:white}

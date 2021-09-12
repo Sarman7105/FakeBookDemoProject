@@ -19,20 +19,29 @@ const Header = () => {
     return (
         <nav id='menu'>
   <input type='checkbox' id='responsive-menu' onclick='updatemenu()'/><label></label>
-  {/* <input type="text" /> */}
   <ul>
-    <li><NavLink to='/home'>Home</NavLink></li>
+    <li><NavLink activeStyle={{
+    fontWeight: "bold",
+    color: '#d4d3d3'
+  }} to='/home'>Home</NavLink></li>
     
-    <li><NavLink to='http://'>About</NavLink></li>
+    <li><NavLink activeStyle={{
+    fontWeight: "bold",
+    color: '#d4d3d3'
+  }} to='http://'>About</NavLink></li>
     
-    <li><NavLink to='http://'>Contact Us</NavLink></li>
+    <li><NavLink activeStyle={{
+    fontWeight: "bold",
+    color: '#d4d3d3'
+  }} to='http://'>Contact Us</NavLink></li>
 
     {
       
-      authCtx.isAuth &&(<li onClick={handleLogout} style={{float:'right', marginRight: '15px'}} ><Link to='http://'>Logout</Link></li>)
+      authCtx.isAuth || localStorage.getItem('isLoggedIn') &&(<li onClick={handleLogout} id='linkRight' ><Link to="./">Logout</Link></li>)
     }
   </ul>
 </nav>
+
     );
 };
 
