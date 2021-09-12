@@ -1,0 +1,36 @@
+.comment{
+    background-color: #f2f2f2;
+    padding: 10px 20px;
+    margin-top: 15px;
+    width: 70%;
+    border-radius: 30px;
+}
+
+.commentsAndLikes{
+    /* background: red; */
+    padding: 10px 70px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.addComment{
+    margin-top: 20px;
+    padding: 5px 0;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    /* justify-content: center; */
+    
+}
+.addComment input{
+    width: 66%;
+    padding: 10px 30px;
+    border-width: 0;
+    border-radius: 15px;
+    background-color: #f2f2f2;
+}
+.addComment input:focus{
+    outline: none;
+}

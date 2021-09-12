@@ -1,8 +1,32 @@
+.loginContainer{
+  margin-top: 72px;
+}
+.loginText{
+  
+  width: 50%;
+}
+.loginForm{
+
+}
+.loginText h2{
+  font-size: 50px;
+  margin-left: 20px;
+  color: rgb(27,153,205);
+}
+.loginContainerInner{
+  margin: 1% 10%;
+  padding: 1%;
+  /* background-color: yellow; */
+  display: flex;
+  align-items: center;
+}
 .login {
-  width: 90%;
+  width: 100%;
   max-width: 40rem;
+  height: 300px;
   margin: 2rem auto;
   padding: 2rem;
+  /* background-color: red; */
 }
 
 .control {
@@ -27,7 +51,7 @@
 .control input {
   flex: 3;
   font: inherit;
-  padding: 0.35rem 0.35rem;
+  padding: 0.70rem;
   border-radius: 6px;
   border: 1px solid #ccc;
 }

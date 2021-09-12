@@ -1,0 +1,30 @@
+.container{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    /* background-color: blue; */
+}
+.main{
+    background-color:#FFFFFF;
+    width: 60%;
+    padding: 20px 2% 30px;
+    /* height: 10vh; */
+    z-index: 12;
+    margin-right: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+}
+.sub{
+    background-color:#FFFFFF;
+    flex: 4;
+    width: 26%;
+    padding: 0 2%;
+    position: sticky;
+    top: 20px;
+    right: 5%;
+    height: 400px;
+    z-index: 12;
+    margin-left: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+}
