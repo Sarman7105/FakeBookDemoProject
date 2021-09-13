@@ -32,8 +32,8 @@ const ProjectDetails = () => {
                 <div className="img">
                   <img src="https://source.unsplash.com/600x300/?nature,forest" alt="postpicture" />
                 </div>
-                <h4>{post.title}</h4>
-                <p>{post.body}</p>
+                <h4 className="postTitle">{post.title}</h4>
+                <p className="postBody">{post.body}</p>
                 <Comments></Comments>
               </LeftContainer>
               <RightContainer/>

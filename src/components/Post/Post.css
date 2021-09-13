@@ -1,3 +1,13 @@
 .postLink{
     text-decoration: none;
+    color: #0099CC;
+}
+.postTitle{
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.postBody{
+    color: rgb(87, 87, 87);
+    text-transform: capitalize;
 }

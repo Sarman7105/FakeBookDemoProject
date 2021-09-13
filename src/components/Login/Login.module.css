@@ -78,3 +78,12 @@
   }
 
 }
+@media(max-width:768px){
+  .loginContainerInner{
+    display: block;
+  }
+  .loginText{
+  
+    width: 100%;
+  }
+}
